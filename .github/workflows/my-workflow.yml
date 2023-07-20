@@ -1,0 +1,14 @@
+name: My Workflow
+on: workflow_dispatch
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First Step
+        run: |-
+          echo "Hello World!"
+          echo "Multiline run."
+      - name: Second Step
+        run: |-
+          echo "Multiple steps."
+    
